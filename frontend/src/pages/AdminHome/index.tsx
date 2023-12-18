@@ -25,7 +25,7 @@ export const AdminHome = () => {
   return (
     <div>
       <div className="flex justify-center gap-10 w-full">
-        <CustomMap directionResponse={[]} onMapPress={null} />
+        <CustomMap directionResponse={[]} onMapPress={undefined} />
         <div>
           {interceptions.map((interceprion) => (
             <Card

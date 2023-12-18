@@ -39,7 +39,7 @@ export const SignUp = () => {
       <img className="h-full w-0 md:w-[55%]" src={bg} />
       <div className="flex items-center justify-center w-full h-full flex-col">
         <div className="flex flex-col w-[60%] max-w[420px] items-center justify-center">
-          <p className="text-center text-black text-4xl font-bold">Увійти</p>
+          <p className="text-center text-black text-4xl font-bold">Реєстрація</p>
           <Input
             value={username}
             onChange={(e) => setUesrname(e.target.value)}
@@ -71,13 +71,13 @@ export const SignUp = () => {
             type="primary"
             disabled={!email || !password}
             onClick={handleSignIn}
-            text="Режстрація"
-            size="w-full h-14"
+            text="Реєстрація"
+            size="w-full h-14 mt-2"
           />
           <div className="mt-28">
             <p className="text-gray2">
               Вже є акаунт?
-              <Link to="/auth/signup" className="text-main pl-2">
+              <Link to="/auth/singin" className="text-main pl-2">
                 Увійти
               </Link>
             </p>

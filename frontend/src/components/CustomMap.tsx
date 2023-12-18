@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import auth from "@utils/auth";
 import "leaflet/dist/leaflet.css";
 import { Socket, io } from "socket.io-client";
-import axios from "axios";
 import {
   MapContainer,
   TileLayer,

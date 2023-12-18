@@ -70,7 +70,7 @@ export const SignIn = () => {
             disabled={!email || !password}
             onClick={handleSignIn}
             text="Увійти"
-            size="w-full h-14"
+            size="w-full h-14 mt-2"
           />
           <div className="mt-28">
             <p className="text-gray2">

@@ -1,7 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "@components/Button";
 import CustomMap from "@components/CustomMap";
 import axios from "axios";
 import { useEffect, useState } from "react";
+
+
+  
 
 export const UserHome = () => {
   const [firstPoint, setFirstPoint] = useState<{
@@ -178,7 +182,7 @@ export const UserHome = () => {
       <CustomMap
         directionResponse={directionResponse}
         onMapPress={
-          step === 1 ? setFirstPoint : step === 2 ? setSecondPoint : null
+          step === 1 ? setFirstPoint : step === 2 ? setSecondPoint : undefined
         }
       />
     </div>
